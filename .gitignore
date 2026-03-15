@@ -1,0 +1,4 @@
+*package.json
+temp/
+*.json
+*.log
