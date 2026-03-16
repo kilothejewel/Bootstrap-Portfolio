@@ -1,0 +1,125 @@
+/* Bootstrap Portfolio - Custom Styles */
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  overflow: hidden;
+}
+
+#hero h1 {
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+#hero p {
+  animation: fadeInUp 0.8s ease-in-out 0.2s backwards;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card Hover Effects */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Project Card Images */
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Button Styling */
+.btn-primary {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark:hover {
+  transition: all 0.3s ease;
+  transform: translateY(-2px);
+}
+
+/* About Section */
+#about {
+  scroll-margin-top: 80px;
+}
+
+/* Projects Section */
+#projects {
+  scroll-margin-top: 80px;
+}
+
+/* Contact Section */
+#contact {
+  scroll-margin-top: 80px;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Accessibility: Focus Styles */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1.display-1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Loading state for images */
+img {
+  background-color: #e9ecef;
+}
